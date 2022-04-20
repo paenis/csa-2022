@@ -1,0 +1,31 @@
+section	.text
+    global _start
+_start:
+    jmp 0x40
+    pop eax
+    mov ecx,eax
+    mov ebx,0x0
+    mov edx,0x53
+    xor eax,eax
+    mov al,BYTE PTR [ecx+ebx*1]
+    push ebx
+    push ecx
+    push eax
+    mov ecx,esp
+    mov eax,0x4
+    mov ebx,0x1
+    push edx
+    mov edx,0x1
+    int 0x80
+    pop edx
+    pop ecx
+    pop ecx
+    pop ebx
+    inc ebx
+    inc ebx
+    dec edx
+    jne 0xf
+    mov eax,0x1
+    mov ebx,0x0
+    int 0x80
+    call 0x2
