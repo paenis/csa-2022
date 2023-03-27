@@ -1,3 +1,5 @@
+# new repo at [csa-2023](https://github.com/paenis/csa-2023) !
+
 # csa-2022
 
 writeups for cyberstart maybe (if i rember)
