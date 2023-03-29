@@ -15,3 +15,8 @@ entering the correct password does nothing
 process will also exit if ptrace is called on it (has workarounds)
 
 ![image](https://user-images.githubusercontent.com/46578974/164867075-b8eb15d0-81f6-4711-92e9-2694d1680b17.png)
+
+ideas, in general:
+
+- https://cutter.re/ works pretty well
+- change eax after ptrace call to bypass
