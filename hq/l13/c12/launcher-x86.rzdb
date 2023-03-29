@@ -4,7 +4,7 @@ version=11
 
 /core
 blocksize=0x400
-offset=0x565af839
+offset=0x565af959
 
 /core/analysis
 
@@ -2331,8 +2331,10 @@ watcom=cc
 0x565af7d0=[{"type":"C","subtype":56,"str":"malloc of size (28h * 29 + 109)"}]
 0x565af7e1=[{"type":"t","subtype":56,"str":"size_t n"}]
 0x565af7e2=[{"type":"t","subtype":56,"str":"int c"}]
-0x565af7e4=[{"type":"t","subtype":56,"str":"void *s"}]
+0x565af7e4=[{"type":"t","subtype":56,"str":"void *s"},{"type":"C","subtype":56,"str":"ret of malloc"}]
+0x565af7e7=[{"type":"C","subtype":56,"str":"fill malloc'ed region with 0xff"}]
 0x565af7ef=[{"type":"C","subtype":56,"str":"loop counter"}]
+0x565af804=[{"type":"C","subtype":56,"str":"ret of malloc, still"}]
 0x565af839=[{"type":"C","subtype":56,"str":"increment"}]
 0x565af843=[{"type":"C","subtype":56,"str":"jump if eax(24h)<100, i.e. repeat 100 times"}]
 0x565af85c=[{"type":"t","subtype":56,"str":"size_t n"}]
@@ -2344,9 +2346,12 @@ watcom=cc
 0x565af8dc=[{"type":"t","subtype":56,"str":"char *s"}]
 0x565af8ee=[{"type":"t","subtype":56,"str":"const char *s2"}]
 0x565af8f2=[{"type":"t","subtype":56,"str":"const char *s1"}]
+0x565af8fd=[{"type":"C","subtype":56,"str":"jump if correct password"}]
 0x565af908=[{"type":"t","subtype":56,"str":"const char *s"}]
 0x565af91c=[{"type":"t","subtype":56,"str":"const char *s"}]
+0x565af930=[{"type":"C","subtype":56,"str":"exit if password was correct"}]
 0x565af93e=[{"type":"t","subtype":56,"str":"const char *format"}]
+0x565af959=[{"type":"C","subtype":56,"str":"exploitable, but i don't really know how to do it"}]
 0x565af9d4=[{"type":"C","str":"[14] -r-x section size 20 named .fini"}]
 0x565af9e8=[{"type":"C","str":"[15] -r-- section size 300 named .rodata"}]
 0x565af9f0=[{"size":24,"type":"s","subtype":98,"str":"I am not your property!"}]
